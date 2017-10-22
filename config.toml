@@ -2,3 +2,5 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "ZED foundation"
 theme = "zed"
+publishDir = "docs"
+
