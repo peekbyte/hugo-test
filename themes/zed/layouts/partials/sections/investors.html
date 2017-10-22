@@ -1,0 +1,22 @@
+<section id="team">
+    <div class="container">
+        <h1>Inversters</h1>
+        <p class="subtext">The strong compnies helping make ZED coin a success.</p>
+        <div class="row">
+            {{ range $.Site.Data.investors }}
+            <div class="col-sm-4 block">
+                <div class="member_img">
+                    <img src={{.image}} />
+                </div>
+                <div class="member">
+                    <h2> {{ .firstName }} <br/> {{ .lastName }} </h2>
+                    <h3>{{ .post }}</h3>
+
+                    <a class="member_in" id="linkedin-alan" href={{.link}}><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+
+</section>
